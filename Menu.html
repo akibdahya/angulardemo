@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Menu</title>
+    <script src="Angular.js"></script>
+</head>
+
+<body>
+    <!-- <div ng-app="" ng-init="names=['Akib','Amir','Asad']">
+        <p>Thats It </p>
+        <ul>
+            <li ng-repeat="x in names">
+                {{ x }}
+            </li>
+        </ul>
+    </div> -->
+    <div ng-app="" ng-init="info=[
+        {name:'Akib',country:'India'},
+        {name:'Akib',country:'India'},
+        {name:'Akib',country:'India'}]">
+        <ul>
+            <li ng-repeat="x in info">
+                {{ x.name+" __ "+x.country }}
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change The Names</title>
+    <script src="Angular.js"></script>
+    <style>
+        .c {
+            position: relative;
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myController" class="c">
+        Username : <input type="text" ng-model="fn">
+        Password : <input type="text" ng-model="ln">
+        <br>
+        Full Name : {{fn+""+ln}}
+    </div>
+</body>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('myController', function ($scope) {
+        $scope.fn = "";
+        $scope.ln = "";
+    });
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Angular.js"></script>
+</head>
+
+<body>
+    <center>
+        <h1>My First Angular Demo
+            <hr>
+        </h1>
+        <h2>Enter Your Credential</h2>
+        <div ng-app="myApp" ng-controller="myCtrl" name="mydiv">
+            <label for="fn">Enter FirstName : </label>
+            <input type="text" id="fn" ng-model="fn"><br /><br />
+            <label for="ln">Enter FirstName : </label>
+            <input type="text" id="ln" ng-model="ln"><br><br />
+            <!-- <label for="em">Enter EmailId</label>
+            <input type="email" id="em" name="email" ng-model="text"> -->
+            <p>FullName : {{fullname()}}</p>
+            <!-- <span ng-show="mydiv.email.$error.email">Not a valid e-mail address</span> -->
+        </div>
+    </center>
+</body>
+<script>
+    var app = angular.module('myApp', []).controller('myCtrl', function ($scope) {
+        $scope.fn = "";
+        $scope.ln = "";
+        $scope.fullname = function () { return $scope.fn + " " + $scope.ln; };
+    });
+</script>
+
+</html>

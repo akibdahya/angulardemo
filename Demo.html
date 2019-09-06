@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+    <script src="Angular.js"></script>
+</head>
+
+<body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+        Enter First Name: <input type="text" id="" ng-model="fn">
+        Enter Last Name: <input type="text" id="" ng-model="ln">
+        <p>Full Name : {{fn+" "+ln}}</p>
+    </div>
+</body>
+
+<script>
+    var app = angular.module('myApp', []).controller('myCtrl', function ($scope) {
+        $scope.fn = "";
+        $scope.ln = "";
+    });
+</script>
+
+</html>

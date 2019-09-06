@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculation</title>
+    <script src="Angular.js"></script>
+</head>
+
+<body>
+    <div data-ng-app="" data-ng-init="v1=5;v2=5">
+        <h2>Cost Calculation</h2>
+        Value 1 : <input type="number" ng-model="v1">
+        Value 1 : <input type="number" ng-model="v2">
+        
+        <p>Addition : {{ v1 + v2}}</p>
+        <p>Substraction : {{ v1 - v2}}</p>
+        <p>Division : {{ v1 / v2}}</p>
+        <p>Multiplication : {{ v1 * v2 }}</p>
+    </div>
+</body>
+
+</html>
